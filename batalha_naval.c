@@ -173,7 +173,6 @@ int main(void) {
 	do {
 		mostra_tab();
 		printf("\t\t\t\tVez de %s!\n\n\n", nome_j1);
-		//pede_coordenadas();
 		verifica(v);
 		v++;//troca a vez de cada jogador
 		mostra_tab();
