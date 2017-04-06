@@ -120,7 +120,6 @@ void verifica(int v) {
 		if(tab2[x][y] == '*' || tab2[x][y] == 'X') {
 			printf("\tVOCE JA ACERTOU ESSA COORDENADA! ESCOLHA OUTRA!!\n");
 			printf("===============================================================================\n");
-			pede_coordenadas();
 			verifica(v);
 		} else {
 			//verifica se o tiro foi na agua
@@ -141,7 +140,6 @@ void verifica(int v) {
 		if(tab1[x][y] == '*' || tab1[x][y] == 'X') {
 			printf("\tVOCE JA ACERTOU ESSA COORDENADA! ESCOLHA OUTRA!!\n");
 			printf("===============================================================================\n");
-			pede_coordenadas();
 			verifica(v);
 		} else {
 			if(barcos1[x][y] == '~') {
