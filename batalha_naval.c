@@ -118,19 +118,20 @@ void verifica(int v) {
 	if(v%2 == 0) { 
 		//verifica se o jogador já atacou a mesma coordenada mais de uma vez
 		if(tab2[x][y] == '*' || tab2[x][y] == 'X') {
-			printf("\tVOCE JA ACERTOU ESSA COORDENADA! ESCOLHA OUTRA!!\n");
+			printf("\t%s, VOCÊ JÁ ACERTOU ESSA COORDENADA! ESCOLHA OUTRA!!\n", nome_j1);
 			printf("===============================================================================\n");
 			verifica(v);
 		} else {
 			//verifica se o tiro foi na agua
 			if(barcos2[x][y] == '~') {
-				printf("\t\t\t\tTIRO NA AGUA!\n");
+				printf("\t\t\t%s - TIRO NA AGUA!\n", nome_j1);
 				printf("===============================================================================\n");
 				tab2[x][y] = '*';
 			} else {
 				//verifica se o jogador acertou
 				if(barcos2[x][y] == 'X') {
-					printf("\t\t\t\t***ACERTOU!!!***\n");
+					printf("\t\t\t%s - ACERTOU!!! \n", nome_j1);
+					printf("===============================================================================\n");
 					tab2[x][y] = 'X';
 					pontos_j1 += 5;
 				}
@@ -138,17 +139,18 @@ void verifica(int v) {
 		}
 	} else if(v%2 == 1){
 		if(tab1[x][y] == '*' || tab1[x][y] == 'X') {
-			printf("\tVOCE JA ACERTOU ESSA COORDENADA! ESCOLHA OUTRA!!\n");
+			printf("\t%s, VOCÊ JÁ ACERTOU ESSA COORDENADA! ESCOLHA OUTRA!!\n", nome_j2);
 			printf("===============================================================================\n");
 			verifica(v);
 		} else {
 			if(barcos1[x][y] == '~') {
-				printf("\t\t\t\tTIRO NA AGUA!\n");
+				printf("\t\t\t%s - TIRO NA AGUA!\n", nome_j2);
 				printf("===============================================================================\n");
 				tab1[x][y] = '*';
 			} else {
 				if(barcos1[x][y] == 'X') {
-					printf("\t\t\t\t***ACERTOU!!!***\n");
+					printf("\t\t\t%s - ACERTOU!!! \n", nome_j2);
+					printf("===============================================================================\n");
 					tab1[x][y] = 'X';
 					pontos_j2 += 5;
 				}
