@@ -1,0 +1,16 @@
+Algoritmo: Encontrar valor
+Inicio
+Função(v:vetor, objetivo:inteiro)
+	Var i:inteiro, x -> 0:inteiro
+	
+	Para i -> 0 até 10 Faça
+		Se vetor[i] == objetivo
+			x -> i
+		Fim-Se
+	Fim-Para
+
+Imprima("Encontrado na pos",x)
+
+Fim
+
+
