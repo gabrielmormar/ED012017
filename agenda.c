@@ -3,7 +3,7 @@
 	Aluno: Gabriel Morais Marreiros
 	Matricula: 16/0121256
 	Github: @Gabrielmormar
-	Descrição: Agenda Eletrônica usando lista encadeada em C */
+	Descrição: Agenda Eletrônica usando lista encadeada em C  */
 
 #include <stdio.h>
 #include <stdlib.h>
